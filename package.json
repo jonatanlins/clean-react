@@ -1,0 +1,14 @@
+{
+  "name": "clean-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jonatanlins/clean-react.git",
+  "author": "Jonatan Lins <jonatanlins.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "git-commit-msg-linter": "^3.1.0",
+    "typescript": "^4.2.4"
+  }
+}
