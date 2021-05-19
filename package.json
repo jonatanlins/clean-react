@@ -5,6 +5,9 @@
   "repository": "https://github.com/jonatanlins/clean-react.git",
   "author": "Jonatan Lins <jonatanlins.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.2",
