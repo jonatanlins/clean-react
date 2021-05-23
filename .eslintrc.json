@@ -1,11 +1,35 @@
 {
-  "plugins": ["eslint-plugin-import-helpers"],
-  "extends": ["standard-with-typescript"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        // "newlinesBetween": "always",
+        "groups": ["module", ["/^@/"], ["parent", "sibling", "index"]],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
