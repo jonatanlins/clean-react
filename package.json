@@ -6,7 +6,8 @@
   "author": "Jonatan Lins <jonatanlins.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack serve --open",
+    "build": "webpack",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
